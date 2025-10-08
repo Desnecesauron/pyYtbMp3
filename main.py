@@ -1,6 +1,6 @@
 #https://dev.to/stokry/download-youtube-video-to-mp3-with-python-26p
 from logging import exception
-import youtube_dl
+import yt_dlp as youtube_dl
 from tkinter import BOTH, END, Tk, Listbox, Button, StringVar, Label, Text
 from threading import Thread
 import random
@@ -15,7 +15,7 @@ class janela(Thread):
         global numtextos
         numtextos+=1
         janela = Tk()
-        janela.geometry('600x420')
+        janela.geometry('650x520')
         janela.resizable(False, False)
         janela.title("Downloader (Youtube, Instagram, Facebook, Twitter, Globo)")
         janela["bg"]="#a3a091"
